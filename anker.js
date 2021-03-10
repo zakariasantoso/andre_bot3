@@ -62,7 +62,7 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:DARK BOT\n'
+            + 'FN:ANDRE BOT\n'
             + 'ORG:Owner Gans;\n'
             + 'TEL;type=CELL;type=VOICE;waid=6282131882053:+62 821-3188-2053\n'
             + 'END:VCARD'
@@ -322,12 +322,15 @@ async function starts() {
 		}, 0)
 		}
 
-     		if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mSucces\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
-			
-			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mSucces\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-			
-
-			switch(command) {
+		
+		if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mSucces\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
+		
+		
+		if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mSucces\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
+		
+		if (!isGroup) return reply(`Kalo ingin menggunakan bot silahkan langsung gabung di grup nya kak. ini link nya yaa https://chat.whatsapp.com/EXsyRf1BfIw7jEcLN6uQm8`)
+		
+		switch(command) {
 			case prefix+'ep':
 				if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
@@ -2391,7 +2394,7 @@ async function starts() {
 					for (let _ of anu) {
 						dms.deleteChat(_.jid)
 					}
-					reply(`*_Sukses delete all chat DARK BOT_*`)
+					reply(`*_Sukses delete all chat ANDRE BOT_*`)
 					break
                                 case prefix+'bcgc':
 					dms.updatePresence(from, Presence.composing) 
@@ -2424,7 +2427,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *DARK BOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *ANDRE BOT BROADCAST* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}

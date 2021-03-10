@@ -342,14 +342,14 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 
 ╭─────「 *SUPPORT ${name}* 」
 ┴
-│➲ *O BOT*
+│➲ *zakariasantoso.github.io*
 │➲ *M. HADI FIRMANSYA*
 │➲ *DELIA AULIA*
 │➲ *KEVIN DAVID*
 │➲ *MY TEAM FXC7 BOT*
 │➲ *FXC7*
 │➲ *FARHAN*
-│➲ *LOL~4NK3R-EROR*
+│➲ *RudeSploit*
 │➲ *CONTENT CREATOR BOT WHATSAPP*
 ┬
 ╰────────────────────────`
@@ -373,14 +373,13 @@ const donasi = (name) => {
 	return `       
 ╭─────「 *DONASI SEIKHLASNYA* 」
 ┴
-│√ *PULSA : 081368646011*
-│√ *GOPAY : 081368646011*
+│√ *PULSA : 082131882053*
+│√ *GOPAY : 082131882053*
+│√ *DANA : 085339374119*
 │
-│\`\`\`Gopay\`\`\`
-│ *15k Invite Bot Ke Grup selama 1 bulan*
+│\`\`\`Biaya Sewa Bot\`\`\`
+│ *10K Invite Bot Ke Grup selama 1 bulan*
 │
-│\`\`\`Pulsa\`\`\`
-│ *20k Invite Bot Ke Group Selama 1 Bulan*
 ┬
 ╰──────「 *BY ${name}* 」
 
